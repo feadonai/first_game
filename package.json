@@ -1,0 +1,17 @@
+{
+  "name": "serverfirstgame",
+  "version": "1.0.0",
+  "description": "servidor do meu primeiro jogo multiplayer",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "felipe",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "shortid": "^2.2.15",
+    "socket.io": "^2.3.0"
+  }
+}
