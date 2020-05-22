@@ -71,7 +71,7 @@ io.on('connection', function(socket){
   });//end JOIN_GAME
 
   socket.on("SET_POS", function(pack){
-  currentPlayer = {
+  dadosPos = {
     id: currentPlayer.id,
     posX: pack.posX,
     posY: pack.posY,
@@ -79,16 +79,16 @@ io.on('connection', function(socket){
     speedY: pack.speedY
   };
 
-  socket.broadcast.emit("UPDATE_POS",  currentPlayer);
+  socket.broadcast.emit("UPDATE_POS",  dadosPos);
 
 })//end setPos
 
 socket.on("SET_ANIM", function(pack){
-  currentPlayer = {
+  dadosAnim = {
     id: currentPlayer.id,
     animation: pack.animation
   };
-  socket.broadcast.emit("UPDATE_ANIM", currentPlayer);
+  socket.broadcast.emit("UPDATE_ANIM", dadosAnim);
 
 });//end setAmin
 
